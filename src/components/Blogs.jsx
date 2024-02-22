@@ -7,7 +7,7 @@ export default function Blogs(){
     const {posts, loading} = useContext(AppContext) ;
     console.log(posts) ;
     return (
-        <div className="w-11/12 max-w-[630px] flex flex-col gap-y-6 pt-5 mt-[70px] mb-[90px]">
+        <div className="w-11/12 max-w-[630px] flex flex-col gap-y-6 pt-5 mt-[70px] mb-[90px] mx-auto">
             {
                 loading? (<Spinner></Spinner>) : (
                     posts.length === 0 ? (

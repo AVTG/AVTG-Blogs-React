@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom"
 
 export default function BlogDetails({ post }) {
     return (
-        <div className="flex flex-col gap-y-1 bg" >
+        <div className="flex flex-col gap-y-1 bg " >
             <NavLink to={`/blog/${post.id}`}>
                 <p className="font-bold leading-6">{post.title}</p>
             </NavLink>
